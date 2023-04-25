@@ -36,4 +36,4 @@ if __name__ == '__main__':
 	parser = argparse.ArgumentParser(description='Give start arguments')
 	parser.add_argument('--start', type=str, required=True, help='start')
 	args = parser.parse_args()
-	main(args.arg1, args.arg2)
+	main(args.start)
