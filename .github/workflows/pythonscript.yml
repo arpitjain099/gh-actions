@@ -30,8 +30,8 @@ jobs:
     - name: Archive htmloutput folder
       run: tar -czvf htmloutput.tar.gz htmloutput
 
-    - name: Upload output folder
+    - name: Upload htmloutput folder
       uses: actions/upload-artifact@v2
       with:
-        name: output-folder
+        name: htmloutput
         path: htmloutput.tar.gz

@@ -1,4 +1,0 @@
-project_name,version,license,pypi_url,github_url,snyk_url,type
-aiobotocore,v2.5.0,License: Apache-2.0,https://www.pypi.org/project/aiobotocore,https://github.com/aio-libs/aiobotocore,https://snyk.io/advisor/python/aiobotocore,key-ecosystem-project
-aiofiles,v23.1.0,License: Apache-2.0,https://www.pypi.org/project/aiofiles,https://github.com/Tinche/aiofiles,https://snyk.io/advisor/python/aiofiles,key-ecosystem-project
-aiohttp,v3.8.4,License: Apache-2.0,https://www.pypi.org/project/aiohttp,https://github.com/aio-libs/aiohttp,https://snyk.io/advisor/python/aiohttp,key-ecosystem-project

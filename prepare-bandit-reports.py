@@ -4,7 +4,7 @@ import subprocess
 import os
 #from jinja2 import Template
 
-csv_file_path = 'snyk_output.csv'
+csv_file_path = 'clean_csv.csv'
 
 # Read the CSV data
 with open(csv_file_path, 'r') as csv_file:
@@ -12,11 +12,12 @@ with open(csv_file_path, 'r') as csv_file:
 	data = [row for row in csv_reader]
 	script_directory = os.path.dirname(os.path.abspath(__file__))
 	print("Script directory:", script_directory)
-
-	for entry in data:
-		if entry["github_url"] != "":
+	start_counter = 1
+	for iterator, entry in enumerate(data):
+		if entry["github_url"] != "" and iterator >= start_counter:
 			file_path = (script_directory + "/htmloutput/" +  entry["project_name"] + ".html")
 			print(entry["github_url"])
+			print("Iterator: " + str(iterator))
 			print()
 			command = ['rm', '-rf', script_directory + "/clonearea/test/"]
 			subprocess.run(command, check=True)
