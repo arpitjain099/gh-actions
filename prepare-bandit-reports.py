@@ -12,8 +12,13 @@ with open(csv_file_path, 'r') as csv_file:
 	data = [row for row in csv_reader]
 	script_directory = os.path.dirname(os.path.abspath(__file__))
 	print("Script directory:", script_directory)
-	print(subprocess.run("pwd"))
-	print(subprocess.run("ls"))
+	result = subprocess.run(["pwd"], capture_output=True, text=True)
+	# Print the output
+	print(result.stdout.strip())
+	result = subprocess.run(["ls"], capture_output=True, text=True)
+
+	# Print the output
+	print(result.stdout.strip())
 	for entry in data:
 		if entry["github_url"] != "":
 			print(entry["github_url"])
