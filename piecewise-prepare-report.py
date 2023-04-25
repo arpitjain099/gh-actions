@@ -6,9 +6,7 @@ import argparse
 #from jinja2 import Template
 
 def main():
-
 	csv_file_path = 'clean_csv.csv'
-
 	# Read the CSV data
 	with open(csv_file_path, 'r') as csv_file:
 		csv_reader = csv.DictReader(csv_file)
@@ -16,7 +14,7 @@ def main():
 		script_directory = os.path.dirname(os.path.abspath(__file__))
 		print("Script directory:", script_directory)
 		for iterator, entry in enumerate(data):
-			if entry["github_url"] != "" and iterator >= 9500 and iterator <= 10000:
+			if entry["github_url"] != "" and iterator >= 7000 and iterator < 7500:
 				file_path = (script_directory + "/htmloutput/" +  entry["project_name"] + ".html")
 				print(entry["github_url"])
 				print("Iterator: " + str(iterator))
