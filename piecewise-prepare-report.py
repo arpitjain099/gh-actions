@@ -27,10 +27,10 @@ def main(start):
 				subprocess.run(command, check=True)
 
 				target_directory = script_directory + "/clonearea/test/"
-				result = subprocess.run(['git', 'clone', '--depth', '1', entry["github_url"], target_directory], check=True)
-				if result == 1:
-					print("Git Clone failed")
-					continue
+				try:
+					subprocess.run(['git', 'clone', '--depth', '1', entry["github_url"], target_directory], check=True)
+				except subprocess.CalledProcessError as e:
+					print(f"Git clone failed " + target_directory)
 				subprocess.run(['bandit', '-r', (script_directory + "/clonearea/test/."), '--format', 'html', '--output', (script_directory + "/htmloutput/" + entry["project_name"] + ".html")], check=False)
 				#break
 
