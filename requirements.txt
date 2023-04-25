@@ -1,2 +1,4 @@
 bandit
 argparse
+BeautifulSoup4
+requests
