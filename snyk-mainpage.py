@@ -75,7 +75,6 @@ _list = [
 """
 
 def main():
-
 	with open("snyk_output.csv", "a+", newline='') as csvfile:
 		count = 0
 		for _type in _list:
@@ -99,3 +98,6 @@ def main():
 							print()
 							writer.writerow(aa)
 							csvfile.flush()
+
+if __name__ == '__main__':
+	main()
