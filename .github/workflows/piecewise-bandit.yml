@@ -1,4 +1,4 @@
-name: "500-1000"
+name: piecewise-bandit-report
 
 on:
   workflow_dispatch:
