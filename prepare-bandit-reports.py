@@ -12,10 +12,10 @@ with open(csv_file_path, 'r') as csv_file:
 	data = [row for row in csv_reader]
 	script_directory = os.path.dirname(os.path.abspath(__file__))
 	print("Script directory:", script_directory)
-
+	subprocess.run("pwd")
+	subprocess.run("ls")
 	for entry in data:
 		if entry["github_url"] != "":
-
 			print(entry["github_url"])
 			print()
 			command = ['rm', '-rf', script_directory + "/clonearea/test/"]
