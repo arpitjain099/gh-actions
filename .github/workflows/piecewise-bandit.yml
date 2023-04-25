@@ -1,4 +1,4 @@
-name: Piecewise run bandit commands
+name: Piecwise run bandit commands
 
 on:
   #workflow_dispatch:
