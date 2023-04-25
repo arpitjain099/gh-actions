@@ -25,6 +25,10 @@ jobs:
       run: |
         python piecewise-prepare-report.py --start 1
 
+    - name: 11 - Run Python script
+      run: |
+        python piecewise-prepare-report.py --start 11
+
     - name: Archive htmloutput folder
       run: tar -czvf htmloutput.tar.gz htmloutput
 
