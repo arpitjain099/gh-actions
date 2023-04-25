@@ -26,3 +26,12 @@ jobs:
 
     - name: Run Python script
       run: python prepare-bandit-reports.py
+
+    - name: Archive htmloutput folder
+      run: tar -czvf htmloutput.tar.gz htmloutput
+
+    - name: Upload output folder
+      uses: actions/upload-artifact@v2
+      with:
+        name: output-folder
+        path: htmloutput.tar.gz
