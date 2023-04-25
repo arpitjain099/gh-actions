@@ -27,7 +27,7 @@ jobs:
 
     - name: "pypi"
       run: |
-        python piecewise-prepare-report.py
+        python snyk-mainpage.py
 
     - name: Archive snyk_output folder
       run: tar -czvf snyk_output.tar.gz snyk_output.csv
