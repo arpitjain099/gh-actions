@@ -41,6 +41,14 @@ jobs:
       run: |
         python piecewise-prepare-report.py --start 31
 
+    - name: 41-Run-Python-script
+      run: |
+        python piecewise-prepare-report.py --start 41
+
+    - name: 51-Run-Python-script
+      run: |
+        python piecewise-prepare-report.py --start 51
+
     - name: 23491-Run-Python-script
       run: |
         python piecewise-prepare-report.py --start 23491
