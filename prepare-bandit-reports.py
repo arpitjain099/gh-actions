@@ -15,19 +15,14 @@ with open(csv_file_path, 'r') as csv_file:
 
 	for entry in data:
 		if entry["github_url"] != "":
-			file_path = (script_directory + "/htmloutput/" +  entry["project_name"] + ".html")
-			if os.path.exists(file_path) and os.path.isfile(file_path):
-				print("html file already exists")
-				print()
-				continue
-			else:
-				print(entry["github_url"])
-				print()
-				command = ['rm', '-rf', script_directory + "/clonearea/test/"]
-				subprocess.run(command, check=True)
 
-				target_directory = script_directory + "/clonearea/test/"
-				subprocess.run(['git', 'clone', '--depth', '1', entry["github_url"], target_directory], check=True)
+			print(entry["github_url"])
+			print()
+			command = ['rm', '-rf', script_directory + "/clonearea/test/"]
+			subprocess.run(command, check=True)
 
-				subprocess.run(['bandit', '-r', (script_directory + "/clonearea/test/."), '--format', 'html', '--output', (script_directory + "/htmloutput/" + entry["project_name"] + ".html")], check=False)
-				#break
+			target_directory = script_directory + "/clonearea/test/"
+			subprocess.run(['git', 'clone', '--depth', '1', entry["github_url"], target_directory], check=True)
+
+			subprocess.run(['bandit', '-r', (script_directory + "/clonearea/test/."), '--format', 'html', '--output', (script_directory + "/htmloutput/" + entry["project_name"] + ".html")], check=False)
+			#break
