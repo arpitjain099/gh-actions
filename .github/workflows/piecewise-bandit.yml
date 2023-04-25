@@ -40,6 +40,192 @@ jobs:
       run: |
         python piecewise-prepare-report.py --start "31"
 
+    - name: "41"
+      run: |
+        python piecewise-prepare-report.py --start "41"
+
+    - name: "51"
+      run: |
+        python piecewise-prepare-report.py --start "51"
+
+    - name: "61"
+      run: |
+        python piecewise-prepare-report.py --start "61"
+
+    - name: "71"
+      run: |
+        python piecewise-prepare-report.py --start "71"
+
+    - name: "81"
+      run: |
+        python piecewise-prepare-report.py --start "81"
+
+    - name: "91"
+      run: |
+        python piecewise-prepare-report.py --start "91"
+
+    - name: "101"
+      run: |
+        python piecewise-prepare-report.py --start "101"
+
+    - name: "111"
+      run: |
+        python piecewise-prepare-report.py --start "111"
+
+    - name: "121"
+      run: |
+        python piecewise-prepare-report.py --start "121"
+
+    - name: "131"
+      run: |
+        python piecewise-prepare-report.py --start "131"
+
+    - name: "141"
+      run: |
+        python piecewise-prepare-report.py --start "141"
+
+    - name: "151"
+      run: |
+        python piecewise-prepare-report.py --start "151"
+
+    - name: "161"
+      run: |
+        python piecewise-prepare-report.py --start "161"
+
+    - name: "171"
+      run: |
+        python piecewise-prepare-report.py --start "171"
+
+    - name: "181"
+      run: |
+        python piecewise-prepare-report.py --start "181"
+
+    - name: "191"
+      run: |
+        python piecewise-prepare-report.py --start "191"
+
+    - name: "201"
+      run: |
+        python piecewise-prepare-report.py --start "201"
+
+    - name: "211"
+      run: |
+        python piecewise-prepare-report.py --start "211"
+
+    - name: "221"
+      run: |
+        python piecewise-prepare-report.py --start "221"
+
+    - name: "231"
+      run: |
+        python piecewise-prepare-report.py --start "231"
+
+    - name: "241"
+      run: |
+        python piecewise-prepare-report.py --start "241"
+
+    - name: "251"
+      run: |
+        python piecewise-prepare-report.py --start "251"
+
+    - name: "261"
+      run: |
+        python piecewise-prepare-report.py --start "261"
+
+    - name: "271"
+      run: |
+        python piecewise-prepare-report.py --start "271"
+
+    - name: "281"
+      run: |
+        python piecewise-prepare-report.py --start "281"
+
+    - name: "291"
+      run: |
+        python piecewise-prepare-report.py --start "291"
+
+    - name: "301"
+      run: |
+        python piecewise-prepare-report.py --start "301"
+
+    - name: "311"
+      run: |
+        python piecewise-prepare-report.py --start "311"
+
+    - name: "321"
+      run: |
+        python piecewise-prepare-report.py --start "321"
+
+    - name: "331"
+      run: |
+        python piecewise-prepare-report.py --start "331"
+
+    - name: "341"
+      run: |
+        python piecewise-prepare-report.py --start "341"
+
+    - name: "351"
+      run: |
+        python piecewise-prepare-report.py --start "351"
+
+    - name: "361"
+      run: |
+        python piecewise-prepare-report.py --start "361"
+
+    - name: "371"
+      run: |
+        python piecewise-prepare-report.py --start "371"
+
+    - name: "381"
+      run: |
+        python piecewise-prepare-report.py --start "381"
+
+    - name: "391"
+      run: |
+        python piecewise-prepare-report.py --start "391"
+
+    - name: "401"
+      run: |
+        python piecewise-prepare-report.py --start "401"
+
+    - name: "411"
+      run: |
+        python piecewise-prepare-report.py --start "411"
+
+    - name: "421"
+      run: |
+        python piecewise-prepare-report.py --start "421"
+
+    - name: "431"
+      run: |
+        python piecewise-prepare-report.py --start "431"
+
+    - name: "441"
+      run: |
+        python piecewise-prepare-report.py --start "441"
+
+    - name: "451"
+      run: |
+        python piecewise-prepare-report.py --start "451"
+
+    - name: "461"
+      run: |
+        python piecewise-prepare-report.py --start "461"
+
+    - name: "471"
+      run: |
+        python piecewise-prepare-report.py --start "471"
+
+    - name: "481"
+      run: |
+        python piecewise-prepare-report.py --start "481"
+
+    - name: "491"
+      run: |
+        python piecewise-prepare-report.py --start "491"
+
+
+
     - name: Archive htmloutput folder
       run: tar -czvf htmloutput.tar.gz htmloutput
 
