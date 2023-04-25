@@ -5,7 +5,7 @@ import os
 import argparse
 #from jinja2 import Template
 
-def main(start, end):
+def main(start):
 	print(f'Argument 1: {start}')
 	start = int(start)
 
