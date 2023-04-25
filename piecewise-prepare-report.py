@@ -5,9 +5,7 @@ import os
 import argparse
 #from jinja2 import Template
 
-def main(start):
-	print(f'Argument 1: {start}')
-	start = int(start)
+def main():
 
 	csv_file_path = 'clean_csv.csv'
 
@@ -18,7 +16,7 @@ def main(start):
 		script_directory = os.path.dirname(os.path.abspath(__file__))
 		print("Script directory:", script_directory)
 		for iterator, entry in enumerate(data):
-			if entry["github_url"] != "" and iterator >= start and iterator <= start + 9:
+			if entry["github_url"] != "" and iterator >= 0 and iterator <= 0 + 30:
 				file_path = (script_directory + "/htmloutput/" +  entry["project_name"] + ".html")
 				print(entry["github_url"])
 				print("Iterator: " + str(iterator))
@@ -35,7 +33,4 @@ def main(start):
 				#break
 
 if __name__ == '__main__':
-	parser = argparse.ArgumentParser(description='Give start arguments')
-	parser.add_argument('--start', type=str, required=True, help='start')
-	args = parser.parse_args()
-	main(args.start)
+	main()
