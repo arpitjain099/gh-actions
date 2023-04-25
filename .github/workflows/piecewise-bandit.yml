@@ -1,4 +1,4 @@
-name: Piecewise run bandit commands
+name: 23500 run bandit commands
 
 on:
   workflow_dispatch:
