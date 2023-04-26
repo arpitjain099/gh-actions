@@ -14,7 +14,7 @@ def main():
 		script_directory = os.path.dirname(os.path.abspath(__file__))
 		print("Script directory:", script_directory)
 		for iterator, entry in enumerate(data):
-			if entry["github_url"] != "" and iterator >= 550 and iterator < 601:
+			if entry["github_url"] != "" and iterator >= 500 and iterator < 550:
 				file_path = (script_directory + "/htmloutput/" +  entry["project_name"] + ".html")
 				print(entry["github_url"])
 				print("Iterator: " + str(iterator))
